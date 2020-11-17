@@ -3,6 +3,7 @@ API - SALA DA NOTÍCIA
 
 # Class Sdn
 ##---------------------------- STATUS DA API
+
 /* Verifica se o token/api está disponível para o domínio */
 
 $SDN = new Sdn;
@@ -13,6 +14,7 @@ echo $api['label'];
 
 
 ##---------------------------- RETORNO DO RELEASE PUBLICADO
+
 /*É obrigatório informar a URL publica do release assim que importado */
 
 $retorno = $this->retorno($releaseId,$url_gerada);
@@ -28,6 +30,7 @@ if($retorno['status']==200 and $retorno['json_d']['status']=='success'){
 $this->getCategorias([]);
 
 ##---------------------------- LISTAR REGIÕES
+
 $this->getRegioes([]);
 
 ##---------------------------- GET NAME EDITORIA
