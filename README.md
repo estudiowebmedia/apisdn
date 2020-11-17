@@ -6,6 +6,8 @@ API - SALA DA NOTÍCIA
 
 /* Verifica se o token/api está disponível para o domínio */
 
+use Sdn;
+
 $SDN = new Sdn;
 
 $api = $SDN->statusApi();
