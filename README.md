@@ -4,21 +4,21 @@ API - SALA DA NOTÍCIA
 # Class Sdn
 ##---------------------------- STATUS DA API
 
-/* Verifica se o token/api está disponível para o domínio */
+> Verifica se o token/api está disponível para o domínio
 
+```
 use Sdn;
 
 $SDN = new Sdn;
-
 $api = $SDN->statusApi();
-
-echo $api['label'];
-
+echo $api['label']; // utilize essa função para verificar a saúde do seu token ou da api.
+```
 
 ##---------------------------- RETORNO DO RELEASE PUBLICADO
 
-/*É obrigatório informar a URL publica do release assim que importado */
+> É obrigatório informar a URL publica do release assim que importado
 
+```
 $retorno = $this->retorno($releaseId,$url_gerada);
 
 if($retorno['status']==200 and $retorno['json_d']['status']=='success'){
@@ -26,27 +26,28 @@ if($retorno['status']==200 and $retorno['json_d']['status']=='success'){
       $retornostatus      = $retorno['json_d']['status'];
       $retornostatus_logs = $retorno['json_d']['status_logs'];
 }
+```
 
 ##---------------------------- LISTAR EDITORIAS
-
+```
 $this->getCategorias([]);
-
+```
 ##---------------------------- LISTAR REGIÕES
-
+```
 $this->getRegioes([]);
-
+```
 ##---------------------------- GET NAME EDITORIA
-
+```
 $this->getNameEditoria(ID_EDITORIA);
-
+```
 ##---------------------------- GET LIST RELEASES
-
+```
 $this->getReleases([]);
-
+```
 ##---------------------------- GET RELEASE POR ID
-
+```
 $this->getReleaseId(ID_RELEASE);
-
+```
 
 ##----------------------------
 
