@@ -32,6 +32,26 @@ if($retorno['status']==200 and $retorno['json_d']['status']=='success'){
 ```
 $this->getCategorias([]);
 ```
+
+### Result
+>Retorna 2x Arrays info || editorias
+```
+{
+"info":{
+        "api_dominio":"meudominio.com.br",
+        "total":39,
+        "total_page":10,
+        "limite_page":"10",
+        "page":"1",
+        "filtro":"ALL"
+},
+"editorias":[
+        {"id_editoria":"0","editoria":"\u00daltimas Not\u00edcias - Todas Editorias"},
+        {"id_editoria":"62","editoria":"Empreendedorismo"}
+]
+}
+```
+
 ##---------------------------- LISTAR REGIÕES
 ```
 $this->getRegioes([]);
@@ -44,6 +64,26 @@ $this->getNameEditoria(ID_EDITORIA);
 ```
 $this->getReleases([]);
 ```
+
+>Retorna 2x Arrays info || editorias
+```
+{
+"info":{
+        "api_dominio":"meudominio.com.br",
+        "total":39,
+        "total_page":10,
+        "limite_page":"10",
+        "page":"1",
+        "filtro":"ALL"
+},
+"releases":[
+
+        {"id_release":"333333","id_editoria":"41","editoria":"Automóveis","id_regiao":"1","regiao":"Global","titulo":"Título do release","subtitulo":"Subtítulo do release","texto":"<p>texto do release</p","midia_foto":"foto.jpg","midia_foto_url_original":"https://urldaimagem/foto_1605.jpg","autor":"SALA DA NOTÍCIA","creditos_fonte":"....","creditos_fotos":"....","data":"2020-11-17 18:16:00","data_atualizacao":"2020-11-17 18:16:00"},
+        
+]
+}
+```
+
 ##---------------------------- GET RELEASE POR ID
 ```
 $this->getReleaseId(ID_RELEASE);
