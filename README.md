@@ -65,7 +65,7 @@ $this->getNameEditoria(ID_EDITORIA);
 $this->getReleases([]);
 ```
 
->Retorna 2x Arrays info || editorias
+>Retorna 2x Arrays info || releases
 ```
 {
 "info":{
@@ -79,6 +79,8 @@ $this->getReleases([]);
 "releases":[
 
         {"id_release":"333333","id_editoria":"41","editoria":"Automóveis","id_regiao":"1","regiao":"Global","titulo":"Título do release","subtitulo":"Subtítulo do release","texto":"<p>texto do release</p","midia_foto":"foto.jpg","midia_foto_url_original":"https://urldaimagem/foto_1605.jpg","autor":"SALA DA NOTÍCIA","creditos_fonte":"....","creditos_fotos":"....","data":"2020-11-17 18:16:00","data_atualizacao":"2020-11-17 18:16:00"},
+        
+         {"id_release":"555555","id_editoria":"41","editoria":"Automóveis","id_regiao":"1","regiao":"Global","titulo":"Título do release","subtitulo":"Subtítulo do release","texto":"<p>texto do release</p","midia_foto":"foto.jpg","midia_foto_url_original":"https://urldaimagem/foto_1605.jpg","autor":"SALA DA NOTÍCIA","creditos_fonte":"....","creditos_fotos":"....","data":"2020-11-17 18:16:00","data_atualizacao":"2020-11-17 18:16:00"},
         
 ]
 }
